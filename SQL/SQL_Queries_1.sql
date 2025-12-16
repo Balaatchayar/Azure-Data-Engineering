@@ -1,13 +1,21 @@
----1. How to create new database
+---Database creation and deletion, database selection, table creation, data insertion, reading data using SELECT, inserting partial 
+---column values, SQL constraints (NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT), primary key vs unique key, foreign key relationships, 
+---filtering data using WHERE and IS NULL, sorting data using ORDER BY, deleting data using DELETE, TRUNCATE, and DROP, updating records, logical operators (AND, OR, IN, NOT IN), and 
+---aggregate functions (MAX, MIN, SUM, COUNT, AVG).
+
+
+
+
+---1. to create new database
 CREATE DATABASE EMPLOYEE
 
---2. how to use database (go to specific database)
+--2. to use database (go to specific database)
 USE EMPLOYEE
 
---3. how to delete database 
+--3. to delete database 
 DROP DATABASE EMPLOYEE
 
---4. how to create table
+--4. to create table
 CREATE TABLE EMP (
 ID INT,
 NAME VARCHAR(30),
@@ -32,7 +40,7 @@ bonus float
 INSERT INTO employee values(1,'Ananya','INDIA',10000,3.5)
 INSERT INTO employee values(2,'Rani','INDIA',20000,3.5)
 
---6. how to read any tables
+--6. to read any tables
 select * from employee
 
 --7. create table and insert only few colmn values in the table
@@ -259,3 +267,4 @@ select count(id) from empl
 select avg(salary) from empl
 
 update empl set location ='USA' where location is null
+
